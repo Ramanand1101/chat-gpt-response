@@ -16,6 +16,9 @@ const openai = new OpenAIApi(configuration);
 
 const history = [];
 
+app.get("/",(req,res)=>{
+  res.send("Home-Page")
+})
 app.post("/chat", async (req, res) => {
   const user_input = req.body.input;
 
