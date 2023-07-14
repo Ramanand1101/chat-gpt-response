@@ -27,6 +27,7 @@ app.post("/chat", async (req, res) => {
     messages.push({ role: "user", content: input_text });
     messages.push({ role: "assistant", content: completion_text });
   }
+  //done
 
   messages.push({ role: "user", content: user_input });
 
